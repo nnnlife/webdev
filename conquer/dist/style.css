@@ -24,24 +24,43 @@ div#home {
 }
 
 #menu {
-  position: absolute;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 8%;
+  display: table;
 }
 
 ul {
-  display: table;
+  display: table-cell;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
 }
 
 li {
-  display: table-cell;
+  display: inline;
   vertical-align: center;
-  background-color: grey;
-  border: 2px solid black;
-  text-align: center;
+  border-color: 2px solid white;
+  padding: 5px;
+  margin: 30px;
+  font-size: 4vw;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+}
+
+li:hover {
+  color: yellow;
 }
 
 div.page {
   width: 100%;
   min-height: 100%;
   background-color: yellow;
+}
+
+#empty {
+  background-color: blue;
 }
